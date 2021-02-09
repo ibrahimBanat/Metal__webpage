@@ -1,4 +1,4 @@
-function album() {
+ export function album() {
     var nameOfAlbum = prompt('do you want to purchase Damnation or Deliverance?');
 
     while (nameOfAlbum != 'Damnation' && nameOfAlbum !='Deliverance'){
@@ -12,22 +12,23 @@ function album() {
 
     var numberOfAlbums = prompt('How Many Albums do you want to purchase?');
 
-    iterator = 1;
+    var iterator = 1;
+    // console.log('hi')
 
     if(nameOfAlbum == 'Damnation') {
         for(iterator; iterator <= numberOfAlbums; iterator++){
-            render = '';
+            var render = '';
             render = render + damnation;
             document.write(render);
         };
     } else { 
         for(iterator; iterator <= numberOfAlbums; iterator++){
-            render = '';
+            var render = '';
             render += deliverance;
             document.write(render + iterator);
         };
     }
-}
+};
 
 
 

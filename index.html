@@ -2,51 +2,89 @@
 <html>
     <head>
         <title>Ibrahim's Blog</title>
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Astloch:wght@700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Maitree:wght@200&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
-            <nav>
-                <img src="https://logoeps.com/wp-content/uploads/2013/04/opeth-vector-logo.png" alt="opeth logo">
-                <ul>
+            <nav class="nav">
+                
+                <img class="logo__img" src="https://logoeps.com/wp-content/uploads/2013/04/opeth-vector-logo.png" alt="opeth logo">
+                <ul class="nav__list">
                     <li><a href="https://en.wikipedia.org/wiki/Opeth">Who is Opeth?</a></li>
-                    <li><a href="https://youtube.com/playlist?list=PL_9gWeiShHFGZPQvoPc0vo7CtiQZUdM0R">My Favorite Album</a></li>
+                    <li><a href="https://youtube.com/playlist?list=PL_9gWeiShHFGZPQvoPc0vo7CtiQZUdM0R">My Favorite Albums</a></li>
+                    <li id="btn"><a>Purchase</a></li>
                 </ul>
             </nav>
         </header>
         <section>
             <h1>Progressive Metal</h1>
-            <h1>Who is Opeth?</h1>
-            <p>Opeth is a Swedish progressive metal/rock band from Stockholm, formed in 1989.[2][3] The group has been through several personnel changes, including the replacement of every single original member. Lead vocalist, guitarist and songwriter Mikael Åkerfeldt has remained Opeth's primary driving force since the departure of original vocalist David Isberg in 1992. Opeth has consistently incorporated progressive, folk, blues, classical, and jazz influences into its usually lengthy compositions, as well as strong influences from death metal, especially in their early works. Many songs include acoustic guitar passages and strong dynamic shifts, as well as demonic vocal characterization. Opeth is also well known for their incorporation of Mellotrons in their work. Opeth rarely made live appearances supporting their first four albums, but since conducting their first world tour after the 2001 release of Blackwater Park, they have led several major world tours.</p>
-            <img src="https://s1.ticketm.net/img/tat/dam/a/cb1/f05eb6cf-066d-4576-ba8f-2318628b6cb1_1347501_CUSTOM.jpg" alt="opeth band">
-
-            <h1>My Favorite Album</h1>
-            <p>Damnation is the seventh full-length studio album by Swedish progressive rock band Opeth. It was released on 22 April 2003, five months after Deliverance, which was recorded at the same time. Damnation is the last Opeth album to date to be produced by Steven Wilson although he did mix two future albums, Heritage and Pale Communion. Mikael Åkerfeldt dedicated both albums to his grandmother, who died in a car accident during the time the albums were being recorded.<br>You can listen to it <a href="https://youtube.com/playlist?list=PL_9gWeiShHFGZPQvoPc0vo7CtiQZUdM0R">Here</a></p>
-            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/1/16/Damnation_cover.jpg/220px-Damnation_cover.jpg" alt="Damnation">
+            <h2>Who is Opeth?</h2>
+            <p>Opeth is a Swedish progressive metal/rock band from Stockholm, formed in 1989. The group has been through several personnel changes, including the replacement of every single original member. Lead vocalist, guitarist and songwriter Mikael Åkerfeldt has remained Opeth's primary driving force since the departure of original vocalist David Isberg in 1992. Opeth has consistently incorporated progressive, folk, blues, classical, and jazz influences into its usually lengthy compositions, as well as strong influences from death metal, especially in their early works. Many songs include acoustic guitar passages and strong dynamic shifts, as well as demonic vocal characterization. Opeth is also well known for their incorporation of Mellotrons in their work. Opeth rarely made live appearances supporting their first four albums, but since conducting their first world tour after the 2001 release of Blackwater Park, they have led several major world tours.</p>
             
+            <div class="band__img">
+                <img src="https://s1.ticketm.net/img/tat/dam/a/cb1/f05eb6cf-066d-4576-ba8f-2318628b6cb1_1347501_CUSTOM.jpg" alt="opeth band">
+                
+                <img style="width:305px; height:350px;" src="https://www.nuclearblast.de/en/data/bands/opeth/band/opeth-2019-1.jpg">
+
+            </div>
+
+            <h1>My Favorite Albums</h1>
+            <p>Damnation is the seventh full-length studio album by Swedish progressive rock band Opeth. It was released on 22 April 2003, five months after Deliverance, which was recorded at the same time. Damnation is the last Opeth album to date to be produced by Steven Wilson although he did mix two future albums, Heritage and Pale Communion. Mikael Åkerfeldt dedicated both albums to his grandmother, who died in a car accident during the time the albums were being recorded.<br>You can listen to it <a href="https://youtube.com/playlist?list=PL_9gWeiShHFGZPQvoPc0vo7CtiQZUdM0R">Here</a></p>
+            <p>Deliverance is the sixth studio album by Swedish progressive metal band Opeth. It was released on 12 November 2002. It was recorded between 22 July and 4 September 2002, at the same time as Damnation, which was released the following year. The two albums contrast starkly with one another, purposely dividing the band's two most prevalent styles, as Deliverance is considered to be one of the band's heaviest albums, whereas Damnation experiments with a much mellower progressive rock-influenced sound.</p>
+            <div id="purchase" class="cards__cont">
+                <div class="card">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/1/16/Damnation_cover.jpg/220px-Damnation_cover.jpg" alt="Denim Jeans" style="width:100%; height:200px">
+                    <h3 class="heading">Damnation</h3>
+                    <p class="card__desc"> The full-length studio album</p>
+                    
+                    
+                    <button class="button__purchase" onClick='VerifyingWillPurchase()'>Purchase</button>
+                </div>
+                <div class="card">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/b/b3/Opeth_-_Deliverance.jpg" alt="Denim Jeans" style="width:100%; height:200px">
+                    <h3 class="heading">Deliverance</h3>
+                    <p class="card__desc"> The full-length studio album</p>
+                    
+                    
+                    <button class="button__purchase" onClick='VerifyingWillPurchase()'>Purchase</button>
+                </div>
+                
+            </div>
 
             
         </section>
-        <h2>Are you willing to buy albums?</h2>
-        <button onClick='VerifyingWillPurchase()'>YES</button>
-        <button onClick='willNotPurchase()'>NO</button>
+        
 
         <h3>My Collegue's Websites</h3>
-            <ul>
+            <ul class="nav__list2">
                 <li><a href="https://oebitw.github.io/Demo/">Omar's Page</a></li>
                 <li><a href="https://yasmeenokh.github.io/Structure-web-pages-with-HTML/">Yasmin's Page</a></li>
             </ul>
         <footer>
-            <h3>About Us</h3>
-            <p>this is a demo website for introducing the opeth band to the world</p>
-            <h3>Contact</h3>
-            <p>Made with ❤ Ibrahim Banat <br> email:ibrahim.banat.97@gmail.com</p>
+           <div class="footer">
+                <div class="about">
+                    <h3>About Us</h3>
+                    <p>this is a demo website for introducing the opeth band to the world</p>
+                </div>
+                <div class="about">
+                    <h3>Contact</h3>
+                    <p>email:ibrahim.banat.97@gmail.com</p>
 
+                </div>
+           </div>
+            
         </footer>
 
 
 
         
-        <script src="index.js"></script>
+        <script type="module" src="index.js"></script>
         
     </body>
 </html>

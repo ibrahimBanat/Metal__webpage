@@ -1,0 +1,238 @@
+body {
+    /* padding: 10px 30px 0px;
+     */
+    /* margin: 0 auto; */
+    
+    width: 960px;
+    margin: auto;
+
+
+}
+
+.logo__img { 
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.nav { 
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    width: 100%;
+    border-bottom: 1px solid black;
+    
+    
+}
+
+
+.nav__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav__list > li { 
+    list-style-type: none;
+    margin-left: 25px;
+    
+    
+}
+
+.nav__list > li > a { 
+    text-decoration: none;
+    width: 100%;
+    border-radius: 50px;
+    background-color: transparent;
+    color: black;
+    height: 40px;
+    border: 1px solid black;
+    padding: 15px;
+    font-family: 'Astloch', cursive;
+
+    
+
+}
+
+.nav__list > li > a:hover{ 
+    
+    opacity: 0.7;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+h1 { 
+    font-family: 'Dosis', sans-serif;
+    font-size: 34px;
+}
+h3 { 
+    font-family: 'Dosis', sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+h2 { 
+    font-family: 'Astloch', cursive;
+}
+
+p { 
+    font-family: 'Maitree', serif;
+    font-weight: 700;
+
+}
+
+.band__img {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
+}
+
+.band__img > img { 
+    border-radius: 10px;
+}
+
+.footer { 
+    
+    
+    
+    
+    
+    display:flex;
+    justify-content: space-between;
+    
+    
+    font-size: 18px;
+    /* margin-top: 5px; */
+
+}
+
+.about> h3 {
+    margin: 0;
+    padding: 0;
+    margin-top: 20px !important;
+
+}
+footer  {
+    border-top: 1px solid;
+    height: 100%;
+    position:relative;
+    width:100%;
+    bottom:0px;
+    color: black;
+}
+
+.about> p { 
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.cc { 
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    border-radius: 15px;
+
+    
+}
+
+.card>img { 
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.cards__cont { 
+    display: flex;
+    justify-content:space-around;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    scroll-margin: 15px;
+}
+  
+  
+  
+  
+  
+.heading { 
+  margin-left: 20px;
+  text-align: left;
+}
+  
+.card button:hover {
+    opacity: 0.7;
+}
+
+.button__purchase { 
+    
+    border: 1px solid black;
+    outline: 0;
+    padding: 12px;
+    color: black;
+    background-color: transparent;
+    text-align: center;
+    cursor: pointer;
+    
+    font-size: 18px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.card__desc {
+    color: gray;
+}
+
+
+.button__purchase {
+    font-family: 'Astloch', cursive;
+    width: 40%;
+}
+
+.nav__list2 {
+    display: block;
+    justify-content: space-between;
+    width: 300px;
+    margin-bottom:30px;
+    margin-top: 40px;
+}
+
+.nav__list2 > li { 
+    list-style-type: none;
+    margin-left: 0px;
+    margin-bottom: 50px;
+    
+    
+}
+
+.nav__list2 > li > a { 
+    text-decoration: none;
+    width: 100%;
+    border-radius: 50px;
+    background-color: transparent;
+    color: black;
+    height: 40px;
+    border: 1px solid black;
+    padding: 15px;
+    font-family: 'Astloch', cursive;
+
+    
+
+}
+
+.nav__list2 > li > a:hover{ 
+    
+    opacity: 0.7;
+}
+
+a:hover {
+    cursor: pointer;
+}
